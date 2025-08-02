@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8fafd;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
+@layer components {
+  .btn-secondary {
+    @apply bg-[#014d83] border select-none border-[#014d83] hover:bg-[#015896] flex items-center gap-1 px-4 py-2 rounded-md text-white transition-all text-sm font-medium;
+  }
+
+  .btn-secondary-gray {
+    @apply bg-gray-400 border select-none flex items-center gap-1 px-4 py-2 rounded-md text-white transition-all text-sm font-medium;
+  }
+
+  .btn-primary {
+    @apply bg-[#014d83] border border-[#014d83] hover:bg-[#015896] flex items-center gap-1 px-4 py-2 rounded-md text-white transition-all;
+  }
+  .text-secondary {
+    @apply text-[#014a7d];
+  }
+}
+
+/* CSS FOR PROGRESS TOAST */
+/* CSS FOR PROGRESS TOAST */
+
+/* .progressbar {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-right: 5px;
+}
+.toastProgress {
+  padding-right: 15px;
+}
+.progressPercent {
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+  color: #020000;
+  margin-top: 8px;
+}
+
+.progressPercentBox {
+  font-size: 16px;
+  font-family: arial;
+  margin-top: 10px;
+} */
+
+/* Ensures that the control buttons are on top */
+#pdf-controls {
+  position: sticky;
+  z-index: 9999; /* High z-index value to bring the controls on top */
+}
+
+.react-doc-viewer-container {
+  padding-top: 50px;
+}
+
+#pdf-zoom-in,
+#pdf-zoom-out,
+#pdf-zoom-reset,
+#pdf-download {
+  z-index: 10000; /* Ensure these buttons are above other content */
+  position: relative;
+}
+
+/* Hide the scrollbar in the DSR */
+.dropdown-container {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.dropdown-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+.dropdown-container {
+  scrollbar-width: none;
+}
+
+/* Add these styles to your CSS file */
+.sidebar-enter {
+  transform: translateX(100%);
+}
+
+.sidebar-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.sidebar-exit {
+  transform: translateX(0);
+}
+
+.sidebar-exit-active {
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 100%;
+  }
+}
+
+/* For desktop devices */
+@media (min-width: 769px) {
+  .sidebar-container {
+    width: 500px;
+  }
+}
+
+/* changes forthe scrollbar in the dsr component  */
+
+.email-content {
+  scrollbar-color: auto;
+  /* For webkit browsers */
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.overflow-y-auto,
+.overflow-auto {
+  scrollbar-color: auto;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Modern scrollbar styling */
+.overflow-y-auto::-webkit-scrollbar,
+.overflow-auto::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track,
+.overflow-auto::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb,
+.overflow-auto::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-radius: 5px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover,
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+}
+
+/* For Firefox */
+.overflow-y-auto,
+.overflow-auto {
+  scrollbar-width: thin;
+  scrollbar-color: #c0c0c0 #f1f1f1;
+}
+
+/* Hide scrollbar when not hovering */
+.overflow-y-auto,
+.overflow-auto {
+  &:not(:hover)::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+  }
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer-effect {
+  background: linear-gradient(
+    90deg,
+    rgba(229, 232, 235, 0.4) 25%,
+    rgba(215, 219, 223, 0.9) 37%,
+    rgba(229, 232, 235, 0.4) 63%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 1s infinite linear;
+}
+
+/* Fix for React Flow event handling */
+.react-flow__nodes {
+  pointer-events: none !important;
+}
+
+.react-flow__node {
+  pointer-events: all !important;
+  isolation: isolate;
+  contain: layout paint style;
+}
+
+/* Debug styling (optional)
+.react-flow__node[data-selected] {
+  outline: 2px solid red;
+} */

@@ -1,0 +1,24 @@
+.progressbar {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-right: 5px;
+}
+.toastProgress {
+  padding-right: 15px;
+}
+.progressPercent {
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+  color: #020000;
+  margin-top: 8px;
+}
+
+.progressPercentBox {
+  font-size: 16px;
+  font-family: arial;
+  margin-top: 10px;
+}

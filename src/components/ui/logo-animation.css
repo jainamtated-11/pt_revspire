@@ -1,0 +1,144 @@
+svg .mini-logo-1 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  }
+  
+  svg.active .mini-logo-1 {
+    fill: rgb(15, 174, 188);
+  }
+  
+  svg .mini-logo-2 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+  }
+  
+  svg.active .mini-logo-2 {
+    fill: rgb(255, 255, 255);
+  }
+  
+  svg .mini-logo-3 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+  }
+  
+  svg.active .mini-logo-3 {
+    fill: rgb(30, 30, 30);
+  }
+  
+  svg .mini-logo-4 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+  }
+  
+  svg.active .mini-logo-4 {
+    fill: rgb(30, 30, 30);
+  }
+  
+  svg .mini-logo-5 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
+      1.2000000000000002s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+  }
+  
+  svg.active .mini-logo-5 {
+    fill: rgb(255, 255, 255);
+  }
+  
+  svg .mini-logo-6 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+  }
+  
+  svg.active .mini-logo-6 {
+    fill: rgb(30, 30, 30);
+  }
+  
+  svg .mini-logo-7 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
+      1.4000000000000001s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+  }
+  
+  svg.active .mini-logo-7 {
+    fill: rgb(30, 30, 30);
+  }
+  
+  svg .mini-logo-8 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+  }
+  
+  svg.active .mini-logo-8 {
+    fill: rgb(30, 30, 30);
+  }
+  
+  svg .mini-logo-9 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+  }
+  
+  svg.active .mini-logo-9 {
+    fill: rgb(255, 255, 255);
+  }
+  
+  svg .mini-logo-10 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
+      1.7000000000000002s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+  }
+  
+  svg.active .mini-logo-10 {
+    fill: rgb(255, 255, 255);
+  }
+  
+  svg .mini-logo-11 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+  }
+  
+  svg.active .mini-logo-11 {
+    fill: rgb(30, 30, 30);
+  }
+  
+  svg .mini-logo-12 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
+      1.9000000000000001s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+  }
+  
+  svg.active .mini-logo-12 {
+    fill: rgb(255, 255, 255);
+  }
+  
+  svg .mini-logo-13 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+  }
+  
+  svg.active .mini-logo-13 {
+    fill: rgb(255, 255, 255);
+  }
+  
+  svg .mini-logo-14 {
+    fill: transparent;
+    -webkit-transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
+    transition: fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
+  }
+  
+  svg.active .mini-logo-14 {
+    fill: rgb(255, 255, 255);
+  }
+  

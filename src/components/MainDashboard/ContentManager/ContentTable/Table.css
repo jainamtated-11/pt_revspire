@@ -1,0 +1,45 @@
+.table-styling {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30px repeat(7, minmax(110px, 1.4fr));
+  transition: grid-template-columns 0.1.3s ease-in-out;
+}
+
+.table-styling thead,
+.table-styling tbody,
+.table-styling tr {
+  display: contents;
+  
+}
+
+.table-heading {
+  position: relative;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.resize-handle:hover {
+  border-right:.5px solid #ccc;
+
+  
+}
+.active {
+  border-right:2px solid #517ea5;
+   
+}
+
+.resize-handle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  cursor: col-resize;
+  user-select: none;
+  
+  box-sizing: border-box;
+ 
+  transition: border-right 0.3s ease-in-out; 
+  
+}
+
+

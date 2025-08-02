@@ -1,0 +1,18 @@
+.sidebar {
+    width: 16vw; 
+    height: 100vh;
+    position: relative;
+    top: 5;
+    background-color: white;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+      
+  }
+
+  .collapse{
+    transform: translateX(0%);
+  }
+  
+ 

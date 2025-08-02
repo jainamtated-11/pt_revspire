@@ -1,0 +1,8 @@
+.mini-logo {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.logoActive {
+  opacity: 0.3;
+}

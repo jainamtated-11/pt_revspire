@@ -1,0 +1,1 @@
+import{t as r,r as o,A as a,j as n,ap as u}from"./index-b9OYvAdP.js";const p=({children:t})=>{const[e]=r(["userData","revspireToken"]),{setIsUsernameValid:s}=o.useContext(a);return!e.userData||!e.revspireToken?(s(!1),n.jsx(u,{to:"/login",replace:!0})):t};export{p as default};

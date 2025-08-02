@@ -1,0 +1,1 @@
+import{t as r,a1 as c,c as n,j as i,ap as p}from"./index-b9OYvAdP.js";const R=({children:a})=>{const[e]=r(["userData","revspireToken"]),{pitchId:s}=c(),t=n(),o=new URLSearchParams(t.search).get("apiURL");return!e.userData||!e.revspireToken?i.jsx(p,{to:`/pitchlogin/${s}?apiURL=${encodeURIComponent(o)}`,replace:!0}):a};export{R as default};
